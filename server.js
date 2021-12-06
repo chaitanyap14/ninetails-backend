@@ -6,6 +6,7 @@ const cors = require("cors");
 const app = express();
 const _ = require("lodash");
 const axios = require("axios");
+const port = process.env.PORT || 7000;
 var info = {
     college: "",
     url: "",
@@ -128,6 +129,6 @@ app.post("/", function (req, response) {
 //
 // });
 
-app.listen(process.env.PORT || 7000, function (req, res) {
+app.listen(port, function (req, res) {
     console.log(`Server started on port 7000`);
 });
