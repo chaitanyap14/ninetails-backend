@@ -26,7 +26,7 @@ app.use(
 );
 
 app.get("/", function (req, res) {
-    res.send("Hello!!");
+    res.send("Nine Tails Backend - Node Server Running");
 });
 
 app.post("/", function (req, response) {
